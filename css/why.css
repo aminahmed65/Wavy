@@ -36,6 +36,7 @@ html{
 
 /*Setting up the Video*/
 .video{
+	-webkit-filter: blur(7px);
 	position: fixed;
 	box-sizing: border-box;
 	right: 0;
@@ -71,11 +72,11 @@ html{
 h1{
 	text-align: center;
 	left: 3%;
-	font-size: 36px;
+	font-size: 28px;
 	color: black;
 	z-index: 1;
 	color: white;
-	font-family: 'Pacifico', cursive;
+	font-family: cursive;
 }
 
 /*Subtitles*/

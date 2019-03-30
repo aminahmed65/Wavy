@@ -120,7 +120,7 @@
 /*Customizing the Text of Atlantic Ocean*/
 	color: rgb(255, 255, 255, 0.5);
 	font-size: 25px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;	
 }
 
@@ -167,7 +167,7 @@
 /*Customizing the Text of Indian Ocean*/
 	color: rgb(255, 255, 255, 0.5);
 	font-size: 25px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
 
@@ -214,7 +214,7 @@
 /*Customizing the Text of Pacific Ocean*/
 	color: rgb(255, 255, 255, 0.5);
 	font-size: 25px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
 
@@ -261,7 +261,7 @@
 /*Customizing the Text of arctic Ocean*/
 	color: rgb(255, 255, 255, 0.5);
 	font-size: 25px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
 
@@ -417,7 +417,7 @@
 .textbg p{
 	transition-delay: 0.15s;
 	color: rgb(255, 255, 255, 0.4);
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -534,7 +534,7 @@
 /*Customizing The Question "Question"*/
 .quiz p{
 	font-size: 20px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	padding-left: 20px;
 }
 
@@ -560,7 +560,7 @@
 .quizAnswersContainer{
 	display: block;
 	padding-left: 50px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	height: 30px;
 	font-size: 17px;
 	-webkit-user-select: none;
@@ -742,7 +742,7 @@
 	.prevButtonContents{
 		color: rgb(255, 255, 255, 0.5);
 		font-size: 16px;
-		font-family: 'IBM Plex Sans', monospace;
+		font-family: 'Roboto', sans-serif;
 		text-align: center;
 		background-color: rgb(255, 255, 255, 0.2);
 		z-index: -1;
@@ -776,7 +776,7 @@
 	.nextButtonContents{
 		color: rgb(255, 255, 255, 0.5);
 		font-size: 16px;
-		font-family: 'IBM Plex Sans', monospace;
+		font-family: 'Roboto', sans-serif;
 		text-align: center;
 		background-color: rgb(255, 255, 255, 0.2);
 		z-index: -1;

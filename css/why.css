@@ -81,14 +81,14 @@ h1{
 /*Subtitles*/
 .text h2{
 	font-size: 22px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }
 
 /*Text*/
 .text p{
 	font-size: 20px;
-	font-family: 'IBM Plex Sans', monospace;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*Back Button*/

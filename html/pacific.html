@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pacific</title>
+	<!-- Initializing Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking styles.css -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- Fonts (Pacifico, IBM Plex Sans) -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700 | Pacifico">
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
+</head>
+
+<body>
+	<!-- Setting the Background Img -->
+	<div class="backgroundContentsPage">
+		<img src="../media/pacificbg.jpg" width="100%" height="100%">
+	</div>
+
+	<!-- Text Box -->
+	<div class="textbg">
+			<header>Pacific Ocean</header>
+			<p><b>Overview</b><br />The Pacific Ocean is the deepest and largest ocean in the world. The Pacific Ocean itself covers approximately 46% of the earth’s water surface area and about ⅓ of the total surface area, making it larger than all of the earth’s land mass combined. The equator divides the ocean into two, The North Pacific Ocean and the South Pacific Ocean. The Mariana Trench in the western  North Pacific is the deepest point in the world reaching 10,994 meters (36,070 ft). The Mariana Trench is deeper than Mount Everest is tall! The ocean is so large that it separates Asia, Australia, and both Americas.<br /><br /><b>History</b><br />Mankind has known about the Pacific Ocean for a long time now, people lived and have used its resources for thousands of years. Humans ended up on that side of the planet due to migration and trade. But the re-discovery of the Pacific Ocean to the Europeans was credited to the Spanish explorer Vasco Núñez de Balboa in 1513. He then named the Pacific Ocean Mar del Sur which translates to Sea of the South because the ocean was to the south coast where he first saw the Pacific. After Vasco, In 1519 Portuguese explorer Ferdinand Magellan sailed the Pacific East to West which resulted in the first world circumnavigation. After Sailing around the world he named the ocean Pacifico (or “Pacific” meaning, “peaceful”).<br /><br /><b>Islands</b><br />The Pacific Ocean is home to the most amount of islands in the world. There are about 25,000 islands within the Pacific ocean. Since there are so many islands within the Pacific ocean it was divided into three main subgroups Micronesia, Melanesia, and Polynesia. First is Micronesia which is in the northwest of the Pacific Ocean, which includes islands such as the Marina and Caroline. Next is Melanesia, which lies near the southwest of the Pacific, Melanesia worlds second largest island in the world New Guinea. New Guinea is by far way bigger than any island in the Pacific Ocean. Last but certainly not least Polynesia, which extends from Hawaii in the North to New Zealand in the South. Polynesia is made up of more than 1,000 islands scattered over the central and southern Pacific Ocean.<br /><br /><b>Ring of Fire</b><br />The Ring of Fire is a unique aspect of the earth which lies within the Pacific Ocean. The Ring of Fire almost perfectly borders the Pacific Ocean, this where about 90% of the world’s earthquakes and 81% of the worlds largest earthquakes occurred. All but three of the world's 25 largest volcanic eruptions of the last 11,700 years occurred at volcanoes within the Ring of Fire. The Ring of Fire directly exists because of the movement and collisions of lithospheric plates (a form of tectonic plates) under the ocean and under land.<br /><br /><b>Specifications</b><br />Trenches: Challenger Deep, Tonga Trench, Galathea Depth, Kuril-Kamchatka Trench, Kermadec Trench (20 more..)<br /><br />Average depth: 4,280 m (14,040 ft)<br /><br />Max depth: 10,911 m (35,797 ft)<br /><br />Surface area: 165,200,000 km² (62.46 million mi²)</p>		
+	</div>
+
+	<!-- Creating the Map Box (had to use inline style because i want to change the image per site with changeing the class)-->
+	<div id="map" onclick="fullMap();" style="background-image: url(../media/pacific.png);"></div>
+
+	<!-- Creating the Quiz Box -->
+	<div id="quizDiv">
+		<!-- Quiz Container -->
+		<div class="quiz">
+			<!-- Bug fix when hovering -->
+			<div class="quizHover">
+
+				<!-- Quiz Title -->
+				<header>Quiz</header>
+
+				<!-- Question -->
+				<p>Who named the Pacific Ocean?</p>
+
+				<!-- Choice 1 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">Ferdinand Magellan
+	 				 <input type="radio" checked="checked" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+
+				<!-- Choice 2 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Vasco Núñez de Balboa
+					 <input type="radio" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+
+				<!-- Choice 3 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Amerigo Vespucci
+					 <input type="radio" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+
+				<!-- Question -->
+				<p>Which one is <b>not</b> a Pacific Island group?</p>
+
+				<!-- Choice 1 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Micronesia
+	 				 <input type="radio" checked="checked" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+
+				<!-- Choice 2 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Melanesia
+					 <input type="radio" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+
+				<!-- Choice 3 -->
+				<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">Oceania
+					 <input type="radio" name="radio">
+					 <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Displaying the Google Maps IFRAME -->
+	<div id="fullMap">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161207219.17672673!2d123.97001264706454!3d-0.33254322157532323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76ed042c30f318eb%3A0x8eff14a070876cbc!2sPacific+Ocean!5e1!3m2!1sen!2sus!4v1553385986916" width="100%" height="100%" frameborder="0" style="border: 2px solid white" allowfullscreen></iframe>
+	</div>
+
+	<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
+	<button  id="hideFullMap" onclick="hideFullMap()"></button>
+</body>
+
+<!-- Back Button -->
+<div class="backButton" onclick="window.location='../index.html'";><</div>
+
+<!-- Prev Button -->
+<div class="prevButton" onclick="switchDivToTop()"><div class="prevButtonContents">Prev</div></div> 
+
+<!-- Next Button -->
+<div class="nextButton" onclick="switchDivToBottom()"><div class="nextButtonContents">Next</div></div>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>atlantic</title>
+	<!-- Initializing Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking styles.css -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- Fonts (Pacifico, IBM Plex Sans) -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700 | Pacifico">
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
+</head>
+<body>
+	<!-- Setting the Background Img -->
+	<div class="backgroundContentsPage">
+			<img src="../media/atlanticbg.jpg" width="100%" height="100%">
+	</div>
+
+	<!-- Text Box -->
+	<div class="textbg">
+			<header>Atlantic Ocean</header>
+			<p><b>Overview</b><br />The Atlantic Ocean is the world’s second largest oceans just after the Pacific ocean. The ocean approximately covers about 20% of the world’s total area. The Atlantic oceans formed approximately 180 million years ago due to the splitting of tectonic plates. The Panthalassa Ocean (Pangea’s largest ocean) was split up into what we know now as the Atlantic Ocean, (East) Pacific Ocean (West) and the Arctic Ocean (North). The Atlantic Ocean is also categorized by the Northern Atlantic and the Southern Atlantic.<br /><br /><b>History</b><br />The name Atlantic was first used in Ancient Greece around 450 BC, Atlantic loosely translates to “the island of Atlas” or “sea of Atlas”. Atlas was the Greek Titan of navigation and astronomy,  known for bearing the weight of the heavens on his shoulders, a punishment bestowed on him by Zeus. The oldest known mentions of an "Atlantic" sea come from Stesichorus around mid-sixth century BC.<br /><br /><b>Naming</b><br />The part of the Atlantic Ocean was also referred to as the Aethiopoan Ocean specifically the lower half near Africa. Also during the Age of Discovery English Cartographers called the Atlantic Ocean the Great Western Ocean. Furthermore, the Atlantic ocean is sometimes called “the pond” or the “great pond” typically used by British and American people, instances dating back as early as 1640.<br /><br /><b>Enviroment</b><br />Over 20,000 different species of fish and other aquatic animals are within the Atlantic Ocean. The aquatic wildlife within the Atlantic ocean is suffering from oil pollution and other forms of industrial waste and sewage in the Carribean Sea, the Gulf of Mexico and other Seas. An interesting fact is that Hurricanes are extremely prevalent in the western parts of the North Atlantic during the Summer and Fall but practically unknown in the South Atlantic.<br /><br /><b>Specifications:</b><br />Trenches: Puerto Rico Trench, South Sandwich Trench, Romanche Trench<br /><br />Average depth: 3,646 m (11,962 ft)<br /><br />Max depth: 8,486 m (27,841 ft)<br /><br />Surface area: 106,460,000 km^2 (41,100,000 sq mi)</p>
+	</div>
+
+	<!-- Creating the Map Box (had to use inline style because i want to change the image per site with changeing the class)-->
+	<div id="map" onclick="fullMap();" style="background-image: url(../media/atlantic.png);"></div>
+		<!-- Creating the Quiz Box -->
+		<div id="quizDiv">
+			<!-- Quiz Container -->
+			<div class="quiz">
+				<!-- Bug fix when hovering -->
+				<div class="quizHover">
+
+					<!-- Quiz Title -->
+					<header>Quiz</header>
+
+					<!-- Question -->
+					<p>Which Greek Titan was the Atlantic Ocean named after?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">Atlas
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Artemis
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Ares
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Question -->
+					<p>How many different types of Species are in the Atlantic Ocean?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">10,000
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">25,000
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">20,000
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+				</div>
+			</div>		
+		</div>
+
+		<!-- Displaying the Google Maps IFRAME -->
+		<div id="fullMap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16097842.317188319!2d-44.61766533472929!3d31.412427970264424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x65a81cae36eb8ff%3A0xa6342257f310534f!2sAtlantic+Ocean!5e1!3m2!1sen!2sus!4v1553207950055" width="100%" height="100%" frameborder="0" style="border: 2px solid white" allowfullscreen></iframe>
+		</div>
+
+		<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
+		<button  id="hideFullMap" onclick="hideFullMap()"></button>
+	</body>
+	
+<!-- Back Button -->
+<div class="backButton" onclick="window.location='../index.html'";><</div>
+
+<!-- Prev Button -->
+<div class="prevButton" onclick="switchDivToTop()"><div class="prevButtonContents">Prev</div></div> 
+
+<!-- Next Button -->
+<div class="nextButton" onclick="switchDivToBottom()"><div class="nextButtonContents">Next</div></div>
+
+</html>

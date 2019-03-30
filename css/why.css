@@ -1,0 +1,115 @@
+/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)*/
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow-x: hidden;
+ 	overflow-y: hidden;
+ }
+/*Customizing ScrollBar width*/
+ ::-webkit-scrollbar {
+	width: 7px;
+ }
+
+/*Customizing ScrollBar-Track color*/
+::-webkit-scrollbar-track {
+	background-color: rgb(255, 255, 255, 0.1);
+}
+
+/*Customizing ScrollBar color*/
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/*Hover Effect for the ScollBar*/
+::-webkit-scrollbar-thumb:hover {
+   background: black; 
+}
+
+/*Prerequisites*/
+html{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #0F3B5F;
+	box-sizing: border-box;
+}
+
+/*Setting up the Video*/
+.video{
+	position: fixed;
+	box-sizing: border-box;
+	right: 0;
+    bottom: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 100%; 
+    min-height: 100%;
+    transform: scale(1.1);
+}
+
+/*The background for the Text*/
+.textBg{ 
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid white;
+	width: 80%;
+	height: 75%;
+	top: 12.5%;
+	left: 10%;
+	overflow-y: auto;
+}
+
+/*Text Box*/
+.text{
+	position: absolute;
+	top: 12%;
+	color: white;
+	padding: 0px 70px; 
+}
+
+/* Why Heading*/
+h1{
+	text-align: center;
+	left: 3%;
+	font-size: 36px;
+	color: black;
+	z-index: 1;
+	color: white;
+	font-family: 'Pacifico', cursive;
+}
+
+/*Subtitles*/
+.text h2{
+	font-size: 22px;
+	font-family: 'IBM Plex Sans', monospace;
+	font-weight: bold;
+}
+
+/*Text*/
+.text p{
+	font-size: 20px;
+	font-family: 'IBM Plex Sans', monospace;
+}
+
+/*Back Button*/
+.backButton{
+	width: 120px;
+	height: 40px;
+	top: 0%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid white;
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	font-family: monospace;
+	text-align: center;
+}
+
+/*Adding Hover Effect to Universal Back Button*/
+.backButton:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+}

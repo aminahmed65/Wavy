@@ -1,0 +1,794 @@
+/*This is my CSS File Enjoy */
+
+
+/*Prerequisites below.  Setting up the the custom ScollBar and Setting Margin/Padding to 0. */
+/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)*/
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow-x: hidden;
+ 	overflow-y: hidden;
+ }
+/*Customizing ScrollBar width*/
+ ::-webkit-scrollbar {
+	width: 7px;
+ }
+
+/*Customizing ScrollBar-Track color*/
+::-webkit-scrollbar-track {
+	background-color: rgb(255, 255, 255, 0.1);
+}
+
+/*Customizing ScrollBar color*/
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/*Hover Effect for the ScollBar*/
+::-webkit-scrollbar-thumb:hover {
+   background: black; 
+}
+
+
+
+/*Editing the Main Page*/
+
+
+
+
+/*Wavy Bar*/
+
+/*Customizing The Wavy Bar on the Main Page*/
+.titleBar{
+	padding-left: 18px;
+	padding-right: 21px;
+	left: 40%;
+	right: 40%;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.2);
+	border: solid 2px;
+	box-sizing: content-box;
+	color: rgb(255, 255, 255, 0.7);
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+	box-sizing: border-box;
+
+}
+
+/*Scaling the Wavy Bar For Better Mobile Support*/
+@media screen and (max-width:565px){
+	.titleBar{
+		font-size: 35px;
+		width: 81.2%;
+		left: 10%;
+		
+	}
+}
+
+
+
+/*Background*/
+
+
+
+/*Editing the Background:  Adding Blur Effect,Scaling Up it so the edges aren't white.*/
+.background{
+	width: 100%;
+  	height: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+   	-webkit-filter: blur(40px);
+   	background-color: blue;
+   	transform: scale(1.1);
+   	background-image: url(../media/water.gif);
+   	transition-duration: 0.5s;
+   	transition-delay: 0.15s;
+}
+.backgroundContentsPage{
+	width: 100%;
+  	height: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+   	-webkit-filter: blur(40px);
+   	transform: scale(1.1);
+}
+
+
+
+/*Atlantic Ocean Front Page*/
+
+
+
+/*Editing the Atlantic Ocean Box in the on the front page*/
+.atlantic{
+	width: 38%;
+  	height: 37%;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.2);
+	top: 10%;
+	left: 10%;
+	transition-duration: 0.25s;
+	border: 2px solid white;
+	overflow: hidden;
+	z-index: 1;
+
+/*Customizing the Text of Atlantic Ocean*/
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 25px;
+	font-family: 'IBM Plex Sans', monospace;
+	text-align: center;	
+}
+
+/*Adding Hover Effect For the Atlantic Ocean*/
+.atlantic:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/*On hover effect changes background image*/
+.atlantic:hover ~ .background {
+    background-image: url(../media/atlanticMainBg.gif);
+}
+
+/*Setting The Img for the Atlantic Ocean*/
+.atlanticImg{
+	width: 100%;
+	height: 100%;
+	background-image: url("../media/atlantic.png");
+}
+
+
+
+/*Indian Ocean Front Page*/
+
+
+
+/*Editing the Indian Ocean Box in the on the front page*/
+.indian{
+	width: 38%;
+  	height: 37%;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.2);
+	transition-duration: 0.25s;
+	top: 10%;
+	right: 10%;
+	border: 2px solid white;
+	overflow: hidden;
+	z-index: 1;
+
+/*Customizing the Text of Indian Ocean*/
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 25px;
+	font-family: 'IBM Plex Sans', monospace;
+	text-align: center;
+}
+
+/*Adding Hover Effect For the Indian Ocean*/
+.indian:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/*On hover effect changes background image*/
+.indian:hover ~ .background {
+    background-image: url(../media/indianMainBg.jpg);
+}
+
+/*Setting The Img for the Indian Ocean*/
+.indianImg{
+	width: 100%;
+	height: 100%;
+	background-image: url("../media/indian.png");
+}
+
+
+
+/*Pacific Ocean Front Page*/
+
+
+
+/*Editing the Pacific Ocean Box in the on the front page*/
+.pacific{
+	width: 38%;
+  	height: 37%;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.2);
+	transition-duration: 0.25s;
+	bottom: 10%;
+	right: 10%;
+	border: 2px solid white;
+	overflow: hidden;
+	z-index: 1;
+
+/*Customizing the Text of Pacific Ocean*/
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 25px;
+	font-family: 'IBM Plex Sans', monospace;
+	text-align: center;
+}
+
+/*Adding Hover Effect For the Pacific Ocean*/
+.pacific:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/*On hover effect changes background image*/
+.pacific:hover ~ .background {
+    background-image: url(../media/pacificMainBg.jpg);
+}
+
+/*Setting The Img for the Pacific Ocean*/
+.pacificImg{
+	width: 100%;
+	height: 100%;
+	background-image: url(../media/pacific.png);
+}
+
+
+
+/*Arctic Ocean Front Page*/
+
+
+
+/*Editing the arctic Ocean Box in the on the front page*/
+.arctic{
+	width: 38%;
+  	height: 37%;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.2);
+	transition-duration: 0.25s;
+	bottom: 10%;
+	left: 10%;
+	border: 2px solid white;
+	overflow: hidden;
+	z-index: 1;
+
+/*Customizing the Text of arctic Ocean*/
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 25px;
+	font-family: 'IBM Plex Sans', monospace;
+	text-align: center;
+}
+
+/*Adding Hover Effect For the arctic Ocean*/
+.arctic:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/*On hover effect changes background image*/
+.arctic:hover ~ .background {
+    background-image: url('../media/arcticMainBg.jpg');
+}
+
+/*Setting The Img for the arctic Ocean*/
+.arcticImg{
+	width: 100%;
+	height: 100%;
+	background-image: url("../media/arctic.png");
+}
+
+
+/*Why Button*/
+
+
+/*Customizing The Why tag on the bottom right of the main page*/
+.why{
+	position: absolute;
+	font-family: 'Pacifico', cursive;
+	font-size: 23px;
+	right: 10%;
+	bottom: 2%;
+	color: white;
+	z-index: 
+}
+/*Adding Hover Effect to "Why" */
+.why:hover{
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	color: black;
+	cursor: pointer;
+}
+
+
+/*Github Button*/
+
+
+/*Positioning the Github link on the bottom left of the Main Page*/
+.github{
+	position: absolute;
+	left: 9.3%;
+	bottom: 0.5%;
+	width: 60px;
+	height: 60px;
+}
+
+/*Adding Hover Effect to GitHub */
+.github:hover{
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+/*Positioning the Source Code Icon*/
+.github img{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+
+
+
+/*Contents Page*/
+/*Setting Up the Universal Layout for the Contents Page of each Ocean*/
+
+
+
+/*Back Button*/
+
+
+/*Customizing The Universal Back Button*/
+.backButton{
+	width: 120px;
+	height: 40px;
+	background-color: rgb(255, 255, 255, 0.2);
+	position: absolute;
+	color: rgb(255, 255, 255, 0.5);
+	font-size: 30px;
+	font-family: monospace;
+	text-align: center;
+	border: 2px solid white;
+}
+
+/*Adding Hover Effect to Universal Back Button*/
+.backButton:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+
+/*Contents Page*/
+
+
+
+
+/*Setting Up the Text Box Background (That blurred Box)*/
+.textbg{
+	position: absolute;
+	width: 40%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	transition-duration: 0.7s;
+	transition-delay: 0.05s;
+	background-color: rgb(255, 255, 255, 0.2);
+	overflow-y: auto;
+	border: 2px solid white;
+}
+
+/*Applying Hover Effect to the Text Background*/
+.textbg:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.0);
+	transition-duration: 0.5s;
+}
+
+/*Customizing Header Text*/
+.textbg header{
+	transition-delay: 0.15s;
+	color: rgb(255, 255, 255, 0.6);
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Changing the Color when Hovering over to make the text more Visible*/
+.textbg:hover header{
+	color: black;
+}
+
+/*Customizing Actual Text*/
+.textbg p{
+	transition-delay: 0.15s;
+	color: rgb(255, 255, 255, 0.4);
+	font-family: 'IBM Plex Sans', monospace;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Changing the Color when Hovering over to make the text more Visible*/
+.textbg:hover p{
+	color: black;
+}
+
+
+
+/*Setting Up the Boxes for the Map and Quiz*/
+
+
+
+/*Setting Up Map Background*/
+#map{
+	position: absolute;
+	width: 35%;
+	height: 38%;
+	top: 10%;
+	right: 10%;
+	transition-duration: 0.7s;
+	background-color: rgb(255, 255, 255, 0.2);
+	background-image: url("../media/atlantic.png");
+	border: 2px solid white;
+	visibility: visible;
+}	
+
+/*Making the map hover so that it looks nicer*/
+#map:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+
+/*Maps IFRAME*/
+
+
+/*Positioning the Container for Google Maps IFrame*/
+#fullMap{
+	position: absolute;
+	left: 6%;
+    right: 6%;
+    bottom: 10%;
+    top: 10%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+/*Positioning the Container for Google Maps IFrame*/
+#hideFullMap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    border: none;
+    outline: none;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+
+
+
+/*Setting Up Quiz Background*/
+#quizDiv{
+	position: absolute;
+	width: 35%;
+	height: 38%;
+	top: 52%;
+	right: 10%;
+	background-color: rgb(255, 255, 255, 0.2);
+	visibility: visible;
+	cursor: initial;
+	border: 2px solid white;
+	overflow-y: auto;
+}
+
+/*Making the quiz hover so that it looks nicer*/
+#quizDiv:hover{
+	color: black;
+	background-color: white;
+	transition: all .2s ease-in-out;
+}
+
+
+
+/*Making the Quiz Box*/
+
+
+
+/*Setting up Quiz Container*/
+.quiz{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/*Customizing The Header "Quiz"*/
+.quiz header{
+	color: rgb(255, 255, 255, 0.6);
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Customizing The Question "Question"*/
+.quiz p{
+	font-size: 20px;
+	font-family: 'IBM Plex Sans', monospace;
+	padding-left: 20px;
+}
+
+/*Makes all of the text black when hovering*/
+.quiz:hover header{
+	color: black;
+}
+
+/*Setting up another conatiner but to specifically fix bugs when hovering.*/
+.quizHover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: rgb(255, 255, 255, 0.4);
+}
+
+/*Bug Fixing: Some elements weren't turning black when hovered over.*/
+.quizHover:hover{
+	color: black;
+}
+
+/*Customizing The text for the Answers*/
+.quizAnswersContainer{
+	display: block;
+	padding-left: 50px;
+	font-family: 'IBM Plex Sans', monospace;
+	height: 30px;
+	font-size: 17px;
+	-webkit-user-select: none;
+}
+
+/*Adding hover Effect to the text*/
+.quizAnswersContainer:hover{
+	background-color: black;
+	color: white;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+/*Removing the default radio checkbox*/
+.quizAnswersContainer input {
+	position: absolute;
+	opacity: 0;
+}
+
+
+
+/*Making the "Prev" not seen now but when scale down will be shown*/
+.prevButton{
+	display: none;
+}
+
+/*Making the "Next" not seen now but when scale down will be shown*/
+.nextButton{
+	display: none;
+}
+
+
+
+
+/*Bug Fixing: This is to Fix a bug where top or bottom box won't be shown when clicking the next/prev button and change resolution.*/
+@media only screen and (min-width:851px) {  
+	#map{
+	visibility: visible !important;
+	}	
+
+	#quizDiv{
+	visibility: visible !important;
+	}
+}
+
+
+
+/*Making The whole site Responsive*/
+
+
+/*When the Screen size is less than 850px across the site will change*/
+@media only screen and (max-width: 850px){
+
+
+	/*Main Page Responsiveness code*/
+
+
+	/*Changing the size and position of the Atlantic Ocean box*/
+	.atlantic{
+		width: 80%;
+	  	height: 17.5%;
+		position: absolute;
+		background-color: rgb(255, 255, 255, 0.2);
+		top: 9.5%;
+		left: 10%;
+		overflow: hidden
+
+	}
+	.atlanticImg{
+		height: 100%;
+	}
+
+	/*Changing the size and position of the Indian Ocean box*/
+	.indian{
+		width: 80%;
+	  	height: 17.5%;
+		position: absolute;
+		background-color: rgb(255, 255, 255, 0.2);
+		top: 30%;
+		left: 10%;
+		overflow: hidden;
+	}
+	.indianImg{
+		height: 100%;
+	}
+
+	/*Changing the size and position of the Pacific Ocean box*/
+	.pacific{
+		width: 80%;
+	  	height: 17.5%;
+		position: absolute;
+		background-color: rgb(255, 255, 255, 0.2);
+		top: 50.5%;
+		left: 10%;
+		overflow: hidden;
+	}
+	.pacificImg{
+		height: 100%;
+	}
+
+	/*Changing the size and position of the arctic Ocean box*/
+	.arctic{
+		width: 80%;
+	  	height: 17.5%;
+		position: absolute;
+		background-color: rgb(255, 255, 255, 0.2);
+		top: 71%;
+		left: 10%;
+		overflow: hidden;
+	}
+	.arcticImg{
+		height: 100%;
+	}
+
+	/*Positioning the Github Button when resolution is small*/
+	.github{
+		left: 8%;
+		bottom: 0%;
+	}
+
+	/*Positioning the why Button when resolution is small*/
+	.why{
+		bottom: 1.2%;
+	}
+
+
+
+	/*Contents Page Responsiveness code*/
+
+
+
+	/*Changing the size and position Text Box when Screen is small*/
+	.textbg{
+		position: absolute;
+		width: 80%;
+		height: 40%;
+		top: 10%;
+		left: 10%;
+		background-color: rgb(255, 255, 255, 0.2);
+	}
+
+	/*Changing the size and position Map Box when Screen is small*/
+	#map{
+		transition-duration: initial;
+		position: absolute;
+		width: 80%;
+		height: 38%;
+		top: 52%;
+		right: 10%;
+		background-color: rgb(255, 255, 255, 0.2);
+		visibility: visible;
+	}	
+
+	/*Changing the size and position Quiz Box when Screen is small*/
+	#quizDiv{
+		transition-duration: initial;
+		position: absolute;
+		width: 80%;
+		height: 38%;
+		top: 52%;
+		right: 10%;
+		background-color: rgb(255, 255, 255, 0.2);
+		visibility: hidden;
+	}
+
+	/*Setting Up the Prev Button */
+	.prevButton{
+		transition-duration: initial;
+		position: absolute;
+		width: 8%;
+		height: 2%;
+		top: 90.4%;
+		right: 51%;
+		border: 2px solid white;
+		display: block;
+		overflow: hidden;
+	}
+	/*Editing The Text on the button */
+	.prevButtonContents{
+		color: rgb(255, 255, 255, 0.5);
+		font-size: 16px;
+		font-family: 'IBM Plex Sans', monospace;
+		text-align: center;
+		background-color: rgb(255, 255, 255, 0.2);
+		z-index: -1;
+	}
+
+	/*Appyling a on the button hover Effect */
+	.prevButtonContents:hover{
+		cursor:pointer;
+		color: black;
+		background-color: white;
+		transition: all .2s ease-in-out;
+		transform: scale(1.1);
+		font-weight: bold;
+
+	}
+
+	/*Setting Up the Next Button */
+	.nextButton{
+		transition-duration: initial;
+		position: absolute;
+		width: 8%;
+		height: 2%;
+		top: 90.4%;
+		right: 41%;
+		border: 2px solid white;
+		display: block;
+		overflow: hidden;
+	}
+
+	/*Editing The Text on the button */
+	.nextButtonContents{
+		color: rgb(255, 255, 255, 0.5);
+		font-size: 16px;
+		font-family: 'IBM Plex Sans', monospace;
+		text-align: center;
+		background-color: rgb(255, 255, 255, 0.2);
+		z-index: -1;
+	}
+
+	/*Appyling a on the button hover Effect */
+	.nextButtonContents:hover{
+		cursor:pointer;
+		color: black;
+		background-color: white;
+		transition: all .2s ease-in-out;
+		transform: scale(1.1);
+		font-weight: bold;
+	}
+}

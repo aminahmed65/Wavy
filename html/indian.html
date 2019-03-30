@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indian</title>
+	<!-- Initializing Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking styles.css -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- Fonts (Pacifico, IBM Plex Sans) -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700 | Pacifico">
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
+</head>
+<body>
+	<!-- Setting the Background Img -->
+	<div class="backgroundContentsPage">
+			<img src="../media/indianbg.jpg" width="100%" height="100%">
+	</div>
+	
+	<!-- Text Box -->
+	<div class="textbg">
+			<header>Indian Ocean</header>
+			<p><b>Overview</b><br />The Indian Ocean is the third largest ocean in the world and also holds 20% of the worlds total water, similar to the Atlantic Ocean. The Indian Ocean is approximately 80 million years old, it started to form about 140 million years ago yet all of the ocean’s basins are younger than 80 million years. The Indian Ocean connects Asia, Africa, and Australia making it a vital trading route for the world<br /><br /><b>History</b><br />The Indian Ocean was formed by two pre-historic oceans. These were the Tethys Ocean (South) and the Paleo-Tethys Ocean (North). The Indian Ocean was named that after the Ottoman Empire blocked the Silk route and there was a pursuit to establish a sea-route to India and China thus naming the ocean the Indian Ocean.  But before that, the Ancient Indians called it the Mahasagara (the great sea of the Sindhu).  A map of Africa dated 1747 depicts that the Indian Ocean was previously referred to as the Eastern Ocean. In all, people called the Indian ocean many different things through history.<br /><br /><b>Trade and Influence on Mankind</b><br />Studies show that 2.6 billion people (about 40% percent of the population) live in or around the Indian Ocean. This is why I think that the Indian Ocean s the network bridge to humanity. The Indian Ocean is such an important geographical wonder because it connects three different continents (Europe, Asia, Africa) allowing different forms of food, culture, and knowledge to be transported between each other. The Indian Ocean was a massive leap human because it facilitated growth as mankind. Without it, our lives (technologically) wouldn’t be as advanced as it is now.<br /><br /><b>Specifications:</b><br />Trenches: Southwest India Ridge, Carlsberg Ridge, Southeast India Ridge, Diamantina trench, Sunda Trench<br /><br />Average depth: 3,741 m (12,274 ft)<br /><br />Max depth: 7,258 m (23,812 ft)<br /><br />Surface area: 68,556,000 km^2 (26,470,000 sq mi)</p>		
+	</div>
+
+	<!-- Creating the Map Box (had to use inline style because i want to change the image per site with changeing the class)-->
+	<div id="map" style="background-image: url(../media/indian.png);" onclick="fullMap()"></div>
+		<!-- Creating the Quiz Box -->
+		<div id="quizDiv">
+			<!-- Quiz Container -->
+			<div class="quiz">
+				<!-- Bug fix when hovering -->
+				<div class="quizHover">
+
+					<!-- Quiz Title -->
+					<header>Quiz</header>
+
+					<!-- Question -->
+					<p>What percent of the world lives near or in the Indian Ocean?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">33%
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">40%
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">26%
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Question -->
+					<p>Which Continents does the Indian Ocean <b>not</b> directly connect with?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">North America
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Asia
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Africa
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+				</div>
+			</div>		
+		</div>
+
+		<!-- Displaying the Google Maps IFRAME -->
+		<div id="fullMap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73015033.87547879!2d42.80437494037005!3d-25.06362901612016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18174db2727f6a1f%3A0xead4bf5063a99637!2sIndian+Ocean!5e1!3m2!1sen!2sus!4v1553209933898" width="100%" height="100%' frameborder="0" style="border: 2px solid white" allowfullscreen></iframe>
+		</div>
+
+		<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
+		<button  id="hideFullMap" onclick="hideFullMap()"></button>
+	</body>
+	
+<!-- Back Button -->
+<div class="backButton" onclick="window.location='../index.html'";><</div>
+
+<!-- Prev Button -->
+<div class="prevButton" onclick="switchDivToTop()"><div class="prevButtonContents">Prev</div></div> 
+
+<!-- Next Button -->
+<div class="nextButton" onclick="switchDivToBottom()"><div class="nextButtonContents">Next</div></div>
+
+</html>

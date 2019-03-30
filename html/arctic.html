@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arctic</title>
+	<!-- Initializing Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking styles.css -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- Fonts (Pacifico, IBM Plex Sans) -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700 | Pacifico">
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
+</head>
+<body>
+	<!-- Setting the Background Img -->
+	<div class="backgroundContentsPage">
+		<img src="../media/arcticbg.jpg" width="100%" height="100%">
+	</div>
+
+	<!-- Text Box -->
+	<div class="textbg">
+			<header>Arctic Ocean</header>
+			<p><b>Overview</b><br />The Arctic Ocean is the smallest ocean of them all. The Arctic is a special ocean because it is so remote from everything that it goes relatively unused compared to the ocean great oceans. This is also why it is often forgotten by normal individuals. The Arctic Ocean is very cold due to it being insanely close to the Northern polar cap of the earth, thus making it a remote area for most people to live.<br /><br /><b>History</b><br />The Arctic Ocean is surprisingly very young, it was formed about 75 million years ago judging from mud samples. The Arctic Ocean based off a 1780s map was commonly referred to as the Northern Ocean. Pytheas of Massilia took the initiative to travel northward in 325 BC, to a new land he named "Eschate Thule", where the Sun only set for three hours each day and the water was replaced by a congealed substance "on which one can neither walk nor sail". <br /><br /><b>Environment and Climate</b><br />The normal seasons for other parts of the world doesn't apply to the arctic ocean. Instead, we have winters which are called polar nights (extremely cold). And the summers which which look like continuous sun called midnight sun. The Arctic ocean has these two different seasons because of it’s positioning, it is on the top of the earth. Fun fact about the Arctic Ocean, it is usually overcast. There are clouds about 60% to 80% of the time depending on the season.<br /><br /><b>Ecosystems</b><br />The ecosystems within the Arctic Ocean is very “fragile” meaning that it is slow to change and also slow to recover from environmental change. The plant life in the Arctic Ocean is very little, pretty much only phytoplankton lives within the ocean. The jobs of these microscopic organisms are to create organic compounds from carbon dioxide molecules in the water to supply the aquatic food chain.<br /><br /><b>Specifications:</b><br />Trenches: Eurasian Basin, Litke Deep Trench<br /><br />Average depth: 1,038 m (3,406 ft)<br /><br />Max depth: 5,450 m (17,880 ft)<br /><br />Surface area: 14.06 million km² (5.427 million mi²)<br /><br /></p>		
+	</div>
+
+	<!-- Creating the Map Box (had to use inline style because i want to change the image per site with changeing the class) -->
+	<div id="map" onclick="fullMap();" style="background-image: url(../media/arctic.png);"></div>
+		<!-- Creating the Quiz Box -->
+		<div id="quizDiv">
+			<!-- Quiz Container -->
+			<div class="quiz">
+				<!-- Bug fix when hovering -->
+				<div class="quizHover">
+
+					<!-- Quiz Title -->
+					<header>Quiz</header>
+
+					<!-- Question -->
+					<p>What does it mean when people say that the Arctic Ocean is fragile?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">The ecosystem is slow to change.
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">The ice is breakable.
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">The water is cold for humans.
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Question -->
+					<p>Who took the initiative to travel north in 325 BC?</p>
+
+					<!-- Choice 1 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Francis Drake
+		 				 <input type="radio" checked="checked" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 2 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#b92e34';">Ferdinand Magellan
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+
+					<!-- Choice 3 -->
+					<label class="quizAnswersContainer" onclick="this.style.color='#39ff14';">Pytheas of Massilia
+						 <input type="radio" name="radio">
+						 <span class="checkmark"></span>
+					</label>
+				</div>
+			</div>		
+		</div>
+		
+		<!-- Displaying the Google Maps IFRAME -->
+		<div id="fullMap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8422597.26226136!2d-71.26606878916463!3d65.0119108011618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e818ae7b7b9dc55%3A0x73f923b8957d071e!2sArctic+Ocean!5e1!3m2!1sen!2sus!4v1553385090534" width="100%" height="100%" frameborder="0" style="border: 2px solid white" allowfullscreen></iframe>
+		</div>
+
+		<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
+		<button  id="hideFullMap" onclick="hideFullMap()"></button>
+	</body>
+	
+<!-- Back Button -->
+<div class="backButton" onclick="window.location='../index.html'";><</div>
+
+<!-- Prev Button -->
+<div class="prevButton" onclick="switchDivToTop()"><div class="prevButtonContents">Prev</div></div> 
+
+<!-- Next Button -->
+<div class="nextButton" onclick="switchDivToBottom()"><div class="nextButtonContents">Next</div></div>
+
+</html>

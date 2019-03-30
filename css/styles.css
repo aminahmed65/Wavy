@@ -81,7 +81,6 @@
 	background-size: cover;
     background-position: center;
    	-webkit-filter: blur(40px);
-   	background-color: blue;
    	transform: scale(1.1);
    	background-image: url(../media/water.gif);
    	transition-duration: 0.5s;

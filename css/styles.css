@@ -52,7 +52,8 @@ ontouchstart
 	padding-right: 21px;
 	margin-left: 10%;
 	margin-right: 10%;
-	position: relative;
+	position: fixed;
+	width: 80%;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: solid 2px;
 	box-sizing: content-box;
@@ -68,7 +69,10 @@ ontouchstart
 @media screen and (max-width:565px){
 	.titleBar{
 		font-size: 35px;
-		width: 81.2%;
+		width: 100%;
+		left: 0%;
+		margin: 0;
+		padding: 0;
 		
 	}
 }
@@ -605,7 +609,7 @@ ontouchstart
 		position: fixed;
 		top: 9.5%;
 		left: 10%;
-		overflow: hidden
+		overflow: hidden;
 
 	}
 	.atlanticImg{
@@ -774,7 +778,7 @@ ontouchstart
 	  	height: 17.5%;
 		position: fixed;
 		top: 12.5%;
-		left: 10%;
+		left: 9.5%;
 		overflow: hidden
 
 	}
@@ -788,7 +792,7 @@ ontouchstart
 	  	height: 17.5%;
 		position: fixed;
 		top: 32.4%;
-		left: 10%;
+		left: 9.5%;
 		overflow: hidden;
 	}
 	.indianImg{
@@ -801,7 +805,7 @@ ontouchstart
 	  	height: 17.5%;
 		position: fixed;
 		top: 52.5%;
-		left: 10%;
+		left: 9.5%;
 		overflow: hidden;
 	}
 	.pacificImg{
@@ -814,7 +818,7 @@ ontouchstart
 	  	height: 17.5%;
 		position: fixed;
 		top: 73%;
-		left: 10%;
+		left: 9.5%;
 		overflow: hidden;
 	}
 	.arcticImg{

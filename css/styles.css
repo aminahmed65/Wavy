@@ -1,4 +1,10 @@
-/*This is my CSS File Enjoy */
+/*This is my CSS File Enjoy 
+
+
+Scrolling hella choppy -webkit-overflow-scrolling:touch
+
+ontouchstart
+*/
 
 
 /*Prerequisites below.  Setting up the the custom ScollBar and Setting Margin/Padding to 0. */
@@ -8,6 +14,7 @@
  	padding: 0;
  	overflow-x: hidden;
  	overflow-y: hidden;
+ 	box-sizing: content-box;
 	background-color: #015088;
  }
 /*Customizing ScrollBar width*/
@@ -22,7 +29,7 @@
 
 /*Customizing ScrollBar color*/
 ::-webkit-scrollbar-thumb {
-	background: #888; 
+	 background: black; 
 }
 
 /*Hover Effect for the ScollBar*/
@@ -76,7 +83,7 @@
 .background{
 	width: 100%;
   	height: 100%;
-	position: absolute;
+	position: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: center;
@@ -89,7 +96,7 @@
 .backgroundContentsPage{
 	width: 100%;
   	height: 100%;
-	position: absolute;
+	position: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: center;
@@ -107,7 +114,7 @@
 .atlantic{
 	width: 38%;
   	height: 37%;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	top: 10%;
 	left: 10%;
@@ -155,7 +162,7 @@
 .indian{
 	width: 38%;
   	height: 37%;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	transition-duration: 0.25s;
 	top: 10%;
@@ -165,7 +172,7 @@
 	z-index: 1;
 
 /*Customizing the Text of Indian Ocean*/
-	color: rgba(255, 255, 255);
+	color: white;
 	font-size: 25px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
@@ -202,7 +209,7 @@
 .pacific{
 	width: 38%;
   	height: 37%;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	transition-duration: 0.25s;
 	bottom: 10%;
@@ -249,7 +256,7 @@
 .arctic{
 	width: 38%;
   	height: 37%;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	transition-duration: 0.25s;
 	bottom: 10%;
@@ -259,7 +266,7 @@
 	z-index: 1;
 
 /*Customizing the Text of arctic Ocean*/
-	color: rgba(255, 255, 255);
+	color: white;
 	font-size: 25px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
@@ -292,7 +299,7 @@
 
 /*Customizing The Why tag on the bottom right of the main page*/
 .why{
-	position: absolute;
+	position: fixed;
 	font-family: 'Pacifico', cursive;
 	font-size: 23px;
 	right: 10%;
@@ -314,7 +321,7 @@
 
 /*Positioning the Github link on the bottom left of the Main Page*/
 .github{
-	position: absolute;
+	position: fixed;
 	left: 9.3%;
 	bottom: 0.5%;
 	width: 60px;
@@ -350,9 +357,9 @@
 .backButton{
 	width: 120px;
 	height: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
-	position: absolute;
-	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	color: white;
 	font-size: 30px;
 	font-family: monospace;
 	text-align: center;
@@ -377,7 +384,7 @@
 
 /*Setting Up the Text Box Background (That blurred Box)*/
 .textbg{
-	position: absolute;
+	position: fixed;
 	width: 40%;
 	height: 80%;
 	top: 10%;
@@ -386,6 +393,7 @@
 	transition-delay: 0.05s;
 	background-color: white;
 	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
 	border: 2px solid white;
 	color: black;
 }
@@ -416,7 +424,7 @@
 
 /*Setting Up Map Background*/
 #map{
-	position: absolute;
+	position: fixed;
 	width: 35%;
 	height: 38%;
 	top: 10%;
@@ -444,7 +452,7 @@
 
 /*Positioning the Container for Google Maps IFrame*/
 #fullMap{
-	position: absolute;
+	position: fixed;
 	left: 6%;
     right: 6%;
     bottom: 10%;
@@ -456,7 +464,7 @@
 
 /*Positioning the Container for Google Maps IFrame*/
 #hideFullMap{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
     border: none;
@@ -471,7 +479,7 @@
 
 /*Setting Up Quiz Background*/
 #quizDiv{
-	position: absolute;
+	position: fixed;
 	width: 35%;
 	height: 38%;
 	top: 52%;
@@ -483,6 +491,7 @@
 	border: 2px solid white;
 	overflow-y: auto;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling:touch;
 	transition: all .2s ease-in-out;
 }
 
@@ -593,7 +602,7 @@
 	.atlantic{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 9.5%;
 		left: 10%;
 		overflow: hidden
@@ -607,7 +616,7 @@
 	.indian{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 30%;
 		left: 10%;
 		overflow: hidden;
@@ -620,7 +629,7 @@
 	.pacific{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 50.5%;
 		left: 10%;
 		overflow: hidden;
@@ -633,7 +642,7 @@
 	.arctic{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 71%;
 		left: 10%;
 		overflow: hidden;
@@ -661,7 +670,7 @@
 
 	/*Changing the size and position Text Box when Screen is small*/
 	.textbg{
-		position: absolute;
+		position: fixed;
 		width: 80%;
 		height: 40%;
 		top: 10%;
@@ -671,29 +680,29 @@
 	/*Changing the size and position Map Box when Screen is small*/
 	#map{
 		transition-duration: initial;
-		position: absolute;
+		position: fixed;
 		width: 80%;
 		height: 38%;
 		top: 52%;
-		right: 10%;
+		left: 10%;
 		visibility: visible;
 	}	
 
 	/*Changing the size and position Quiz Box when Screen is small*/
 	#quizDiv{
 		transition-duration: initial;
-		position: absolute;
+		position: fixed;
 		width: 80%;
 		height: 38%;
 		top: 52%;
-		right: 10%;
+		left: 10%;
 		visibility: hidden;
 	}
 
 	/*Setting Up the Prev Button */
 	.prevButton{
 		transition-duration: initial;
-		position: absolute;
+		position: fixed;
 		width: 8%;
 		height: 2%;
 		top: 90.4%;
@@ -726,7 +735,7 @@
 	/*Setting Up the Next Button */
 	.nextButton{
 		transition-duration: initial;
-		position: absolute;
+		position: fixed;
 		width: 8%;
 		height: 2%;
 		top: 90.4%;
@@ -763,7 +772,7 @@
 	.atlantic{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 12.5%;
 		left: 10%;
 		overflow: hidden
@@ -777,7 +786,7 @@
 	.indian{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 32.4%;
 		left: 10%;
 		overflow: hidden;
@@ -790,7 +799,7 @@
 	.pacific{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 52.5%;
 		left: 10%;
 		overflow: hidden;
@@ -803,7 +812,7 @@
 	.arctic{
 		width: 80%;
 	  	height: 17.5%;
-		position: absolute;
+		position: fixed;
 		top: 73%;
 		left: 10%;
 		overflow: hidden;

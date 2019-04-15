@@ -65,7 +65,7 @@ html{
 	position: absolute;
 	top: 12%;
 	color: white;
-	padding: 0px 70px; 
+	padding: 0px 30px; 
 }
 
 /* Why Heading*/
@@ -99,7 +99,7 @@ h1{
 	top: 0%;
 	background-color: rgba(0, 0, 0, 0.5);
 	border: 2px solid white;
-	position: absolute;
+	position: fixed;
 	color: white;
 	font-size: 30px;
 	font-family: monospace;

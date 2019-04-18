@@ -398,7 +398,7 @@ ontouchstart
 	background-color: white;
 	overflow-y: auto;
 	-webkit-overflow-scrolling:touch;
-	border: 2px solid white;
+	border: 2px solid black;
 	color: black;
 }
 
@@ -436,7 +436,7 @@ ontouchstart
 	transition-duration: 0.7s;
 	background-color: rgba(255, 255, 255, 0.2);
 	background-image: url("../media/atlantic.png");
-	border: 2px solid white;
+	border: 2px solid black;
 	visibility: visible;
 }	
 
@@ -469,12 +469,12 @@ ontouchstart
 /*Positioning the Container for Google Maps IFrame*/
 #hideFullMap{
 	position: fixed;
+	background-color:  rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
     border: none;
     outline: none;
     z-index: -1;
-    opacity: 0;
 
 }
 
@@ -492,7 +492,7 @@ ontouchstart
 	background-color: white;
 	visibility: visible;
 	cursor: initial;
-	border: 2px solid white;
+	border: 2px solid black;
 	overflow-y: auto;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling:touch;
@@ -524,6 +524,7 @@ ontouchstart
 
 /*Customizing The Question "Question"*/
 .quiz p{
+	padding-right: 10px;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	padding-left: 20px;
@@ -683,7 +684,6 @@ ontouchstart
 
 	/*Changing the size and position Map Box when Screen is small*/
 	#map{
-		transition-duration: initial;
 		position: fixed;
 		width: 80%;
 		height: 38%;
@@ -704,68 +704,64 @@ ontouchstart
 	}
 
 	/*Setting Up the Prev Button */
-	.prevButton{
+	#prevButton{
 		transition-duration: initial;
 		position: fixed;
-		width: 8%;
-		height: 2%;
-		top: 90.4%;
-		right: 51%;
+		width: 80%;
+		height: 3.2%;
+		top: 93.4%;
+		left: 10%;
 		border: 2px solid white;
 		display: block;
+		background-color: rgba(0, 0, 0, 0.3);
 		overflow: hidden;
-	}
-	/*Editing The Text on the button */
-	.prevButtonContents{
-		color: rgba(255, 255, 255, 0.5);
-		font-size: 16px;
+		visibility: hidden;
+		color: white;
+		font-size: 20px;
+		padding-top: 1%;
+		padding-bottom: 1%;
 		font-family: 'Roboto', sans-serif;
 		text-align: center;
-		background-color: rgba(255, 255, 255, 0.2);
-		z-index: -1;
+
 	}
 
+
 	/*Appyling a on the button hover Effect */
-	.prevButtonContents:hover{
+	#prevButton:hover{
 		cursor:pointer;
 		color: black;
 		background-color: white;
-		transition: all .2s ease-in-out;
-		transform: scale(1.1);
 		font-weight: bold;
 
 	}
 
+
 	/*Setting Up the Next Button */
-	.nextButton{
+	#nextButton{
 		transition-duration: initial;
 		position: fixed;
-		width: 8%;
-		height: 2%;
-		top: 90.4%;
-		right: 41%;
+		width: 80%;
+		height: 3.2%;
+		top: 93.4%;
+		left: 10%;
 		border: 2px solid white;
 		display: block;
 		overflow: hidden;
-	}
-
-	/*Editing The Text on the button */
-	.nextButtonContents{
-		color: rgba(255, 255, 255, 0.5);
-		font-size: 16px;
+		color: white;
+		font-size: 20px;
 		font-family: 'Roboto', sans-serif;
 		text-align: center;
-		background-color: rgba(255, 255, 255, 0.2);
-		z-index: -1;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 
+
 	/*Appyling a on the button hover Effect */
-	.nextButtonContents:hover{
+	#nextButton:hover{
 		cursor:pointer;
 		color: black;
 		background-color: white;
-		transition: all .2s ease-in-out;
-		transform: scale(1.1);
 		font-weight: bold;
 	}
 	@media only screen and (max-width: 750px){
@@ -824,5 +820,17 @@ ontouchstart
 	.arcticImg{
 		height: 100%;
 	}
+
 	}
+
+/*Making the font better for smaller devices*/
+@media only screen and (max-width: 400px){
+		#prevButton{
+		font-size: 16px;
+	}
+	#nextButton{
+		font-size: 16px;
+	}
+}
+
 }

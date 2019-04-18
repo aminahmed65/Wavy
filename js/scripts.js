@@ -1,11 +1,15 @@
 //This switches the Div from the Map to the Quiz (Next)
 function switchDivToBottom(){
 	document.getElementById('map').style.visibility = "hidden";
+	document.getElementById('prevButton').style.visibility = "visible";
+	document.getElementById('nextButton').style.visibility = "hidden";
 	document.getElementById('quizDiv').style.visibility = "visible";
 }
 
 //This switches the Div from the Quiz to the Map (Prev)
 function switchDivToTop(){
+	document.getElementById('nextButton').style.visibility = "visible";
+	document.getElementById('prevButton').style.visibility = "hidden";
 	document.getElementById('quizDiv').style.visibility = "hidden";
 	document.getElementById('map').style.visibility = "visible";
 }

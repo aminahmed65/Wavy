@@ -27,3 +27,11 @@ function hideFullMap(){
 	document.getElementById('fullMap').style.visibility='hidden';
 	document.getElementById('hideFullMap').style.zIndex='-11';
 }
+
+function openNav() {
+	document.getElementById("navMenu").style.visibility='visible';
+}
+
+function closeNav() {
+	document.getElementById("navMenu").style.visibility='hidden';
+}

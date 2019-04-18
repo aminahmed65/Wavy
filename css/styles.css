@@ -93,7 +93,7 @@ ontouchstart
     background-position: center;
    	-webkit-filter: blur(40px);
    	transform: scale(1.1);
-   	background-image: url(../media/water.gif);
+   	background-image: url(../media/atlanticMainBg.gif);
    	transition-duration: 0.5s;
    	transition-delay: 0.15s;
 }
@@ -146,7 +146,7 @@ ontouchstart
 
 /*On hover effect changes background image*/
 .atlantic:hover ~ .background {
-    background-image: url(../media/atlanticMainBg.gif);
+    background-image: url(../media/water.gif);
 }
 
 /*Setting The Img for the Atlantic Ocean*/
@@ -359,6 +359,7 @@ ontouchstart
 
 /*Customizing The Universal Back Button*/
 .backButton{
+	top: 2%;
 	width: 120px;
 	height: 40px;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -368,14 +369,14 @@ ontouchstart
 	font-family: monospace;
 	text-align: center;
 	border: 2px solid white;
+	left: 10%;
 }
 
 /*Adding Hover Effect to Universal Back Button*/
 .backButton:hover{
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: black;
 	transition: all .2s ease-in-out;
-	transform: scale(1.1);
 	cursor: pointer;
 }
 
@@ -566,7 +567,6 @@ ontouchstart
 }
 
 
-
 /*Making the "Prev" not seen now but when scale down will be shown*/
 .prevButton{
 	display: none;
@@ -577,8 +577,86 @@ ontouchstart
 	display: none;
 }
 
+.menu{
+	top: 2%;
+	width: 120px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	color: white;
+	right: 0%;
+	font-size: 30px;
+	font-family: monospace;
+	text-align: center;
+	border: 2px solid white;
+	right: 10%;
 
+}
+.menu:hover{
+	background-color: black;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+#navMenu{
+	visibility: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 100;
+}
+#menuContent{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 150px;
+}
+#menuContent a{
+	width: 100px;
+	height: 40px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	font-family: Lato;
+	font-size: 32px;
+	word-spacing: 100vw;
+	margin: auto;
+	text-align: center;
+	z-index: 1001;
+}
+#menuContent a:hover{
+	color: #00FFFF;
+	transition: all .1s ease-in-out;
 
+}
+.menuIcon{
+	width: 28px;
+	height: 2px;
+	background-color: white;
+	margin: 8px 48px;
+}
+#closeMenu{
+	top: 2%;
+	cursor: pointer;
+	position: fixed;
+	font-family: Lato;
+	width: 120px;
+	height: 40px;
+	right: 10%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	font-size: 30px;
+	background-color: rgb(255, 0, 0);
+	text-align: center;
+	border: 2px solid black;
+	color: black;
+	z-index: 1001;
+}
+#closeMenu:hover{
+	border: 2px solid white;
+	color: white;
+	transition: all .2s ease-in-out;
+}
 
 /*Bug Fixing: This is to Fix a bug where top or bottom box won't be shown when clicking the next/prev button and change resolution.*/
 @media only screen and (min-width:851px) {  
@@ -702,7 +780,6 @@ ontouchstart
 		left: 10%;
 		visibility: hidden;
 	}
-
 	/*Setting Up the Prev Button */
 	#prevButton{
 		transition-duration: initial;
@@ -732,9 +809,14 @@ ontouchstart
 		color: black;
 		background-color: white;
 		font-weight: bold;
-
+		border: 2px solid black;
 	}
-
+	.menu{
+		right: 9.5%;
+	}
+	#closeMenu{
+		right: 9.5%;
+	}
 
 	/*Setting Up the Next Button */
 	#nextButton{
@@ -763,6 +845,7 @@ ontouchstart
 		color: black;
 		background-color: white;
 		font-weight: bold;
+		border: 2px solid black;
 	}
 	@media only screen and (max-width: 750px){
 	/*MAaking*/

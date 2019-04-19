@@ -53,24 +53,23 @@ ontouchstart
 	margin-left: 10%;
 	margin-right: 10%;
 	position: fixed;
-	width: 80%;
+	width: 81%;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: solid 2px;
 	box-sizing: content-box;
-	color: rgba(0, 0, 0, 0.8);
+	color: white;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Pacifico', cursive;
 	box-sizing: border-box;
-	color: white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 /*Scaling the Wavy Bar For Better Mobile Support*/
 @media screen and (max-width:565px){
 	.titleBar{
 		font-size: 35px;
-		width: 100%;
-		left: 0%;
+		left: 9.5%;
 		margin: 0;
 		padding: 0;
 		
@@ -123,7 +122,7 @@ ontouchstart
 	top: 10%;
 	left: 10%;
 	transition-duration: 0.25s;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	z-index: 1;
 
@@ -171,7 +170,7 @@ ontouchstart
 	transition-duration: 0.25s;
 	top: 10%;
 	right: 10%;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	z-index: 1;
 
@@ -218,7 +217,7 @@ ontouchstart
 	transition-duration: 0.25s;
 	bottom: 10%;
 	right: 10%;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	z-index: 1;
 
@@ -265,7 +264,7 @@ ontouchstart
 	transition-duration: 0.25s;
 	bottom: 10%;
 	left: 10%;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	z-index: 1;
 
@@ -305,7 +304,7 @@ ontouchstart
 .whyBox{
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	width: 120px;
 	height: 40px;
@@ -334,7 +333,7 @@ ontouchstart
 .githubBox{
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	width: 120px;
 	height: 40px;
@@ -392,7 +391,7 @@ ontouchstart
 	font-size: 30px;
 	font-family: monospace;
 	text-align: center;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	left: 10%;
 }
 
@@ -612,7 +611,7 @@ ontouchstart
 	font-size: 30px;
 	font-family: monospace;
 	text-align: center;
-	border: 2px solid white;
+	border: 2px solid rgba(0, 0, 0, 0.8);
 	right: 10%;
 
 }
@@ -811,7 +810,7 @@ ontouchstart
 		height: 3.2%;
 		top: 93.4%;
 		left: 10%;
-		border: 2px solid white;
+		border: 2px solid rgba(0, 0, 0, 0.8);
 		display: block;
 		background-color: rgba(0, 0, 0, 0.3);
 		overflow: hidden;
@@ -829,10 +828,8 @@ ontouchstart
 	/*Appyling a on the button hover Effect */
 	#prevButton:hover{
 		cursor:pointer;
-		color: black;
-		background-color: white;
-		font-weight: bold;
-		border: 2px solid black;
+		color: white;
+		background-color: black;
 	}
 	.menu{
 		right: 9.5%;
@@ -849,7 +846,7 @@ ontouchstart
 		height: 3.2%;
 		top: 93.4%;
 		left: 10%;
-		border: 2px solid white;
+		border: 2px solid rgba(0, 0, 0, 0.8);
 		display: block;
 		overflow: hidden;
 		color: white;
@@ -859,16 +856,15 @@ ontouchstart
 		padding-top: 1%;
 		padding-bottom: 1%;
 		background-color: rgba(0, 0, 0, 0.3);
+		transition: all .2s ease-in-out;
 	}
 
 
 	/*Appyling a on the button hover Effect */
 	#nextButton:hover{
 		cursor:pointer;
-		color: black;
-		background-color: white;
-		font-weight: bold;
-		border: 2px solid black;
+		color: white;
+		background-color: black;
 	}
 	@media only screen and (max-width: 750px) and (orientation: portrait){
 	/*MAaking*/

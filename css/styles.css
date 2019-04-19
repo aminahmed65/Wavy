@@ -68,8 +68,9 @@ ontouchstart
 /*Scaling the Wavy Bar For Better Mobile Support*/
 @media screen and (max-width:565px){
 	.titleBar{
+		width: 98%;
 		font-size: 35px;
-		left: 9.5%;
+		left: 1%;
 		margin: 0;
 		padding: 0;
 		

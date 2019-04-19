@@ -85,6 +85,7 @@ ontouchstart
 
 /*Editing the Background:  Adding Blur Effect,Scaling Up it so the edges aren't white.*/
 .background{
+	top: -5%;
 	width: 100%;
   	height: 100%;
 	position: fixed;
@@ -98,6 +99,7 @@ ontouchstart
    	transition-delay: 0.15s;
 }
 .backgroundContentsPage{
+	top: -5%;
 	width: 100%;
   	height: 100%;
 	position: fixed;

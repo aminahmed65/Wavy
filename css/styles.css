@@ -303,7 +303,7 @@ ontouchstart
 
 /*Customizing The Why tag on the bottom right of the main page*/
 .whyBox{
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid white;
 	overflow: hidden;
@@ -332,7 +332,7 @@ ontouchstart
 /*Github Button*/
 
 .githubBox{
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 2px solid white;
 	overflow: hidden;

@@ -91,7 +91,7 @@
 	</div>
 
 	<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
-	<button  id="hideFullMap" onclick="hideFullMap()"></button>
+	<button  id="hideFullMap" onclick="hideFullMap();" ontouchstart="hideFullMap();"></button>
 </body>
 
 <!-- Menu Button -->
@@ -104,7 +104,7 @@
 <!-- FullScreen Menu -->
 <div id="navMenu">
 	<!-- Close Button -->
-	<div id="closeMenu" onclick="closeNav()">&#9932;</div>
+	<div id="closeMenu" onclick="closeNav()">&#10005;</div>
 	<div id="menuContent">
 	<a href="../index.html">Home<br><br></a>
 	<a href="atlantic.html">Atlantic<br><br></a>
@@ -117,7 +117,7 @@
 
 	
 <!-- Back Button -->
-<div class="backButton" onclick="window.location='../index.html'";>&#10508;</div>
+<div class="backButton" onclick="window.location='../index.html'";>&#8592;</div>
 
 <!-- Prev Button -->
 <div id="prevButton" onclick="switchDivToTop();">Prev</div> 

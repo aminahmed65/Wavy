@@ -302,48 +302,72 @@ ontouchstart
 
 
 /*Customizing The Why tag on the bottom right of the main page*/
-.why{
-	position: fixed;
-	font-family: 'Pacifico', cursive;
-	font-size: 23px;
+.whyBox{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid white;
+	overflow: hidden;
+	width: 120px;
+	height: 40px;
 	right: 10%;
 	bottom: 2%;
-	color: white;
-	z-index: 
 }
-/*Adding Hover Effect to "Why" */
-.why:hover{
+.whyBox:hover{
+	color: white;
+	background-color: black;
 	transition: all .2s ease-in-out;
-	transform: scale(1.1);
-	color: black;
 	cursor: pointer;
 }
+.why{
+	font-family: 'Pacifico', cursive;
+	font-size: 23px;
+	right: 13%;
+	bottom: 2%;
+	color: white;
+	text-align: center;
+}
+/*Adding Hover Effect to "Why" */
 
 
 /*Github Button*/
 
-
+.githubBox{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid white;
+	overflow: hidden;
+	width: 120px;
+	height: 40px;
+	left: 10%;
+	bottom: 2%;
+}
+.githubBox:hover{
+	color: white;
+	background-color: black;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
 /*Positioning the Github link on the bottom left of the Main Page*/
 .github{
-	position: fixed;
-	left: 9.3%;
-	bottom: 0.5%;
-	width: 60px;
-	height: 60px;
+	position: relative;
+	bottom: 1%;
+	left: 10%;
+
 }
 
 /*Adding Hover Effect to GitHub */
 .github:hover{
 	transition: all .2s ease-in-out;
-	transform: scale(1.1);
 	cursor: pointer;
 }
 
 /*Positioning the Source Code Icon*/
 .github img{
-	position: absolute;
-	top: 20%;
-	left: 20%;
+	position: relative;
+	left: 25%;
+	margin-top: 2.5px;
+
+
 }
 
 
@@ -609,15 +633,14 @@ ontouchstart
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	padding-top: 150px;
+	padding-top: 100px;
 }
 #menuContent a{
 	width: 100px;
 	height: 40px;
 	text-decoration: none;
-	text-transform: capitalize;
 	color: #fff;
-	font-family: Lato;
+	font-family: monospace;
 	font-size: 32px;
 	word-spacing: 100vw;
 	margin: auto;
@@ -625,7 +648,7 @@ ontouchstart
 	z-index: 1001;
 }
 #menuContent a:hover{
-	color: #00FFFF;
+	color: 	#707070;
 	transition: all .1s ease-in-out;
 
 }
@@ -675,7 +698,7 @@ ontouchstart
 
 
 /*When the Screen size is less than 850px across the site will change*/
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px) and (orientation: portrait){
 
 
 	/*Main Page Responsiveness code*/
@@ -847,7 +870,7 @@ ontouchstart
 		font-weight: bold;
 		border: 2px solid black;
 	}
-	@media only screen and (max-width: 750px){
+	@media only screen and (max-width: 750px) and (orientation: portrait){
 	/*MAaking*/
 
 
@@ -896,18 +919,24 @@ ontouchstart
 		width: 80%;
 	  	height: 17.5%;
 		position: fixed;
-		top: 73%;
+		top: 72%;
 		left: 9.5%;
 		overflow: hidden;
 	}
 	.arcticImg{
 		height: 100%;
 	}
-
+	.githubBox{
+		left: 9.5%;
+	}
+	.whyBox{
+		right: 9.5%
 	}
 
+}
+
 /*Making the font better for smaller devices*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) and (orientation: portrait){
 		#prevButton{
 		font-size: 16px;
 	}

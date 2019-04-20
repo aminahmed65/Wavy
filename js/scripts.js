@@ -30,8 +30,11 @@ function hideFullMap(){
 
 function openNav() {
 	document.getElementById("navMenu").style.visibility='visible';
+	document.getElementById("navMenu").style.opacity = "1";
+	document.getElementById("navMenu").style.zIndex = "1001";
 }
 
 function closeNav() {
 	document.getElementById("navMenu").style.visibility='hidden';
+	document.getElementById("navMenu").style.opacity = "0";
 }

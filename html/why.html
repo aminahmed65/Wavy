@@ -6,6 +6,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico" />
 	<!-- Initializing Viewport-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
 	<!-- Linking why.css -->
 	<link rel="stylesheet" type="text/css" href="../css/why.css">
 	<!-- Fonts (Pacifico, IBM Plex Mono) -->
@@ -13,10 +15,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-	<!-- Setting Up Video -->
-	<video autoplay muted loop class="video">
-			 <source src="../media/rain.mp4" type="video/mp4">
-	</video>
+	<!-- Setting the Background Img -->
+	<div class="backgroundContentsPage">
+			<img src="../media/whybg.jpg" width="100%" height="100%">
+	</div>
 
 	<!-- Text Background -->
 	<div class="textBg">
@@ -40,7 +42,28 @@
 	</div>
 
 	<!-- Back Button -->
-	<div class="backButton" onclick="window.location='../index.html'";><</div>
+	<div class="backButton" onclick="window.location='../index.html'";>&#8592;</div>
+
+	<!-- Menu Button -->
+	<div class="menu" onclick="openNav()">
+			<div class="menuIcon"></div>
+			<div class="menuIcon"></div>
+			<div class="menuIcon"></div>
+	</div>
+
+	<!-- FullScreen Menu -->
+	<div id="navMenu">
+		<!-- Close Button -->
+		<div id="closeMenu" onclick="closeNav()">&#10005;</div>
+		<div id="menuContent">
+		<a href="../index.html">Home<br><br></a>
+		<a href="atlantic.html">Atlantic<br><br></a>
+		<a href="indian.html">Indian<br><br></a>
+		<a href="pacific.html">Pacific<br><br></a>
+		<a href="arctic.html">Arctic<br><br></a>
+		<a href="why.html">Why<br><br></a>
+		</div>
+	</div>
 
 </body>
 </html>

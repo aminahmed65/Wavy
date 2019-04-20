@@ -62,7 +62,8 @@ html{
 	left: 10%;
 	overflow-x: hidden;
 	border-radius: 10px;
-	
+	-webkit-overflow-scrolling:touch;
+
 }
 
 /*Text Box*/

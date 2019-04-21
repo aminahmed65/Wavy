@@ -1,4 +1,9 @@
-/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)*/
+/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)
+
+
+move the padding on the left 
+
+*/
  body{
  	margin: 0;
  	padding: 0;
@@ -89,15 +94,35 @@ h1{
 
 /*Subtitles*/
 .text h2{
-	font-size: 22px;
-	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-family:  monospace;
 	font-weight: bold;
+}
+
+.text a{
+	font-size: 24px;
+	font-family:  monospace;
+	font-weight: bold;
+}
+
+.text h3{
+	font-size: 20px;
+	font-family:  monospace;
+	color: #C0C0C0;
+}
+.text h3 a{
+	font-size: 18px;
+	color: 	#00FFFF;
+	font-family:  monospace;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 /*Text*/
 .text p{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
+	color: #D3D3D3;
 }
 
 /*Back Button*/

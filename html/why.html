@@ -6,8 +6,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico" />
 	<!-- Initializing Viewport-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Linking scripts.js -->
-	<script src="../js/scripts.js"></script>
 	<!-- Linking why.css -->
 	<link rel="stylesheet" type="text/css" href="../css/why.css">
 	<!-- Fonts (Pacifico, IBM Plex Mono) -->
@@ -29,17 +27,47 @@
 			<!-- Why Title -->
 			<h1>Why</h1>
 
+			<h3>Link: <a href="https://tinyurl.com/wavycs">https://tinyurl.com/wavycs</a></h3>
+
 			<!-- Subtitle -->
 			<h2>My Intentions</h2>
 
 			<!-- Text -->
-			<p>The reasoning behind making Wavy was to educate people on the oceans we have on our planet. People know about the oceans and that they exist but doesn’t know about the really important details that drastically changed the course of human history. This includes, trade within the Indian ocean when the silk road was blocked and to the Marina trench (the deepest point known on earth). We as humans usually focus on the land we see and give attention to that part of the world, but forget the aquatic wonderland under the ocean.</br></br>Funny story that happened around January, I randomly asked one of my good friends, How many oceans are there? He told me three, this is a high school senior by the way. So after that funny encounter, I knew that I had to create a site educating people on the Oceans.</br></br>I know someone will ask, What about the Southern Ocean? I didn't add the Southern Ocean because it isn't considered an Ocean by all the countries.</br></br></p>
+			<p>The sole reason why I decided to create Wavy was to educate people on the oceans we have on our planet. People know basic information about the oceans but most people don’t know about the really important details that drastically changed the course of human history. People need to know this important information, such as the massive trade routes throughout the Indian Ocean. As humans we typically focus on what we can directly access, the oceans to most seem like a border that they can’t cross. This Wavy is here to inspire people to cross that border.</br></br>Funny story that happened around January, I randomly asked one of my good friends, How many oceans are there? He told me three, I stood there in shock. Then we got into a five-minute playful argument on how many oceans there are. Google came to save this conversation. So after that funny encounter, there was no doubt in my mind that I had to create a website educating people on oceans. Thus Wavy was born</br></br>I know someone will ask, What about the Southern Ocean? The Southern Ocean is out of the scope of this project. Wavy was made to educate people on the four ocean basins. </br></br></p>
+
+			<h1>Problem Solving</h1>
+
+			<h2>Initial UI/UX Designs</h2>
+
+			<h3>Wavy 1.0 : <a href="https://tinyurl.com/wavy1-0">https://tinyurl.com/wavy1-0</a></h3>
+			<p>The first UI that I designed was garbage, it was hard to use, it didn’t look nice at all, and I might have added too many transitions. The setup was very clutter and it wasn’t scalable at all. Wavy 1.0 did teach me linking HTML pages when clicking on a specific DIV.</p>
+
+			<h3>Wavy 2.0 : <a href="https://tinyurl.com/wavy2-0">https://tinyurl.com/wavy2-0</a></h3>
+			<p>After making 1.0 I thought I needed a simpler way for people to interact with the site. The plan for 2.0  was for people to click the ocean they wanted (one of the four quadrants).  And a popup would come up to show the information they needed (the gray one). I quickly scrapped that Idea because I didn't have enough space to add more features to the site. Where am I going to put a map? Or a Quiz?</p>
+
+			<h3>Wavy 3.0 : <a href="https://tinyurl.com/wavy3-0">https://tinyurl.com/wavy3-0</a> (may cause overheating on mobile)</h3>
+			<p>Wavy 3.0 was the big one. I basically took the linking divs to HTML feature from Wavy 1.0 and the quadrants from Wavy 2.0. Thus Wavy 3.0 came along. Wavy 3.0 is what I turned in to qualify to be a finalist. Wavy 3.0 had a big problem that I couldn’t put my finger on until now. Its too fast, too much is happening. The hover on the text was useless and the text was unreadable when not hovering on it. This is bad because if someone is trying to take notes on the info, they have to keep their cursor on the div. Overall the difference between 3.0 to 4.0 was functionally and aesthetics. Just getting people to use the site and observing how they navigate really helped when improving the site. Wavy 3.0 had a huge problem with position absolute that was handy capping me from having mobile support, so after fixing that my site was basically complete.</p>
+
+			<h2>Google Fonts</h2>
+			<p>There was a big issue with importing fonts, fonts wouldn’t show up unless I ran the site unsecured. I took me 4 days scouring stack overflow to finally find out that the link with importing it in my HTML must be in https, not http (which is the default that Google Fonts gives you).</p>
+
+			<h2>Position Absolute?</h2>
+			<p>Position absolute destroyed my site (mobile-wise). The destop version was perfectly fine but initial I wanted my site to have mobile support. So when finally came to test it on mobile it was completely messed up. The text wasn’t working, scrolling didn’t work, too many hover effects made it so that phone started to overheat and overall it was just unusable. The wavy fixed this was by changing position: absolute; to position: fixed;. Then adjusting the position of all the divs on mobile. Wavy 4.0 fixed all of these issues and more.</p>
+
+			<h2>Scrolling on Mobile</h2>
+			<p>When scrolling on mobile you must use the command -webkit-overflow-scrolling:touch; or scrolling will be choppy and it tasks the mobile processors heavily. Which is really bad when your site is mainly about the text on it. You will see what I am talking about if you start scrolling on Wavy 3.0 on mobile.</p>
+
+			<h2>Improvements?</h2>
+			<p>The only feature I would add to my site is a better landscape mode for mobile. It looks perfect on Tablets but on small mobile devices it looks off.</p>
 
 			<!-- I had to put my name somewhere -->
-			<h2>Wavy by: Amin Ahmed</h2>
+			<h1>Amin Ahmed</h1>
 
 		</div>
 	</div>
+
+	<!-- Linking scripts.js -->
+	<script src="../js/scripts.js"></script>
 
 	<!-- Back Button -->
 	<div class="backButton" onclick="window.location='../index.html'";>&#8592;</div>

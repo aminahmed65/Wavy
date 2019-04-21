@@ -9,8 +9,6 @@
 	<!-- Fonts (Pacifico, IBM Plex Mono) -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<!-- Linking scripts.js -->
-	<script src="../js/scripts.js"></script>
 	<!-- Creating Adding wave Favicon-->
 	<link rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico" />
 	<!-- IOS FullScreen -->
@@ -46,19 +44,19 @@
 					<p>Which Greek Titan was the Atlantic Ocean named after?</p>
 
 					<!-- Choice 1 -->
-					<label class="quizAnswersContainer" onclick="this.style.background='#39ff14';" ontouchstart="this.style.background='#39ff14';">Atlas
+					<label class="quizAnswersContainer" onclick="this.style.background='#39ff14';" ontouchend="this.style.background='#39ff14';">Atlas
 		 				 <input type="radio" checked="checked" name="radio">
 						 <span class="checkmark"></span>
 					</label>
 
 					<!-- Choice 2 -->
-					<label class="quizAnswersContainer" onclick="this.style.background='#b92e34';" ontouchstart="this.style.background='#b92e34';">Artemis
+					<label class="quizAnswersContainer" onclick="this.style.background='#b92e34';" ontouchend="this.style.background='#b92e34';">Artemis
 						 <input type="radio" name="radio">
 						 <span class="checkmark"></span>
 					</label>
 
 					<!-- Choice 3 -->
-					<label class="quizAnswersContainer" onclick="this.style.background='#b92e34';" ontouchstart="this.style.background='#b92e34';">Ares
+					<label class="quizAnswersContainer" onclick="this.style.background='#b92e34';" ontouchend="this.style.background='#b92e34';">Ares
 						 <input type="radio" name="radio">
 						 <span class="checkmark"></span>
 					</label>
@@ -93,7 +91,7 @@
 		</div>
 
 		<!-- Allowing it so that you can click on the edges of the map to make it disappear -->
-		<button  id="hideFullMap" onclick="hideFullMap();" ontouchstart="hideFullMap();"></button>
+		<button  id="hideFullMap" onclick="hideFullMap();" ontouchend="hideFullMap();"></button>
 	</body>
 
 <!-- Menu Button -->
@@ -126,5 +124,8 @@
 
 <!-- Next Button -->
 <div id="nextButton" onclick="switchDivToBottom();">Next</div>
+
+<!-- Linking scripts.js -->
+<script src="../js/scripts.js"></script>
 
 </html>

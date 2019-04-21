@@ -1,12 +1,4 @@
-/*This is my CSS File Enjoy 
-
-
-Scrolling hella choppy -webkit-overflow-scrolling:touch
-
-getting the map to close when touching the sides
-
-ontouchstart
-*/
+/*This is my CSS File Enjoy */
 
 
 /*Prerequisites below.  Setting up the the custom ScollBar and Setting Margin/Padding to 0. */
@@ -737,6 +729,16 @@ ontouchstart
 
 
 	/*Main Page Responsiveness code*/
+
+	.textbg header{
+		padding: 0px 10px;
+	}
+
+	/*Customizing Actual Text*/
+	.textbg p{
+		padding-left: 10px;
+		padding-right: 5px;
+	}
 
 
 	/*Changing the size and position of the Atlantic Ocean box*/

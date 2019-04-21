@@ -1,9 +1,4 @@
-/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)
-
-
-move the padding on the left 
-
-*/
+/*Setting Margin/Padding to 0, and Hiding ScollBar(allowing me to set when it appears)*/
  body{
  	margin: 0;
  	padding: 0;
@@ -245,4 +240,19 @@ h1{
 	border: 2px solid white;
 	color: white;
 	transition: all .2s ease-in-out;
+}
+
+/*Aligning text better on mobile*/
+@media only screen and (max-width: 850px) and (orientation: portrait){
+	.text{
+		padding: 0px 10px; 
+	}
+	.text h3 a{
+		font-size: 15px;
+		color: 	#00FFFF;
+		font-family:  monospace;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
 }
